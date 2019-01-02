@@ -1,0 +1,47 @@
+/*HEADER*/
+
+/*HERO*/
+.hero{
+    display: flex;
+    height: 355px;
+    justify-content: space-between;
+}
+/*PORTFOLIO*/
+.project1{
+    display: flex;
+    border: 1px solid black;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+.project2{
+    display: flex;
+    border: 1px solid black;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+/*CAPACITATION*/
+.PLC_title{
+    display: flex;
+    border: 1px solid black;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.DW_title{
+    display: flex;
+    border: 1px solid black;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.Git_title{
+    display: flex;
+    border: 1px solid black;
+    border-radius: 5px;
+    
+}
+/*EXPERIENCE*/
+
+/*SERVICES*/
+
+/*CONTACT*/

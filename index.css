@@ -5,59 +5,32 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: darkslateblue;
+    background-color: midnightblue;
     margin: 0 0 10px 0;
 }
-
+.header a{
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
 .logo{
-    padding: 20px;
+    padding-left: 20px;
 }
 .container_header{
     display: contents;
-}
-/* .header {
-    background-color: #1b2127;
-    color: white;
-    display: flex;
-    height: 100px;
-    align-items: center;
-    justify-content: flex-end ;
-    flex-wrap: wrap;
-} */
-  
-ol,
-ul {
-    margin: 0;
-    padding: 0;
-    list-style: none;
-}
-figure {
-    margin: 0;
-    display: flex; 
+    height: inherit;
 }
 
-.menu {
-    height: inherit;
-    display: flex;
-    font-size: 16px;
+.header li{
+    margin: 10px;
+    list-style: none;
+    padding: 10px;
 }
-.header ol {
+
+.header ol{
     display: flex;
-    height: inherit;
+    padding-inline-start: 0px;
 }
-.header ol li {
-    height: inherit;
-    margin: 2px;
-}
-.header a {
-    display: flex;
-    align-items: center;
-    height: inherit;
-    padding: 0 10px;
-    color: white;
-    text-decoration: none;
-    font-size: 20px;
-} 
 
 /*HERO*/
 .hero{
@@ -106,3 +79,68 @@ figure {
 /*SERVICES*/
 
 /*CONTACT*/
+
+/* MEDIA QUERIES */
+@media screen and (max-width: 1024px){
+    
+}
+@media screen and (max-width: 768px){
+    .header{
+        height: 150px;
+        display: inherit;
+    }
+    .container_header{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .logo{
+        margin-top: 10px;
+        margin-bottom: 0;
+    }
+}
+@media screen and (max-width: 480px){
+    .header{
+        height: 100px;
+        display: inherit;
+    }
+    .header a{
+        font-size: 0.85em;
+    }
+    .container_header{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .logo_image{
+        height: 35px;
+        width: 90px;
+    }
+    .header ol{
+        margin-block-start: 10px;
+    }
+    .header li{
+        padding: 0px;
+        margin: 1px 15px;
+    }
+}
+@media screen and (max-width: 320px){
+    .header{
+        height: 70px;
+    }
+    .logo{
+        padding-left: 0;
+
+    }
+    .logo_image{
+        height: 18px;
+        width: 50px;
+    }
+    .header a{
+        font-size: 0.5em;
+    }
+
+    .header li{
+        margin: 1px 12px;
+    }
+}

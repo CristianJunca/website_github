@@ -28,6 +28,13 @@
     content: "\e900";
   }
 
+h3{
+    font-size: 30px;
+}
+h6{
+    font-size: 19px;
+    margin: 10px 0;
+}
 /*HEADER*/
 .header{
     width: 100%;
@@ -36,7 +43,7 @@
     justify-content: space-between;
     align-items: center;
     background-color: midnightblue;
-    margin: 0 0 10px 0;
+    border-bottom: 3px solid rgba(0,0,0,0.3);
 }
 .header a{
     color: white;
@@ -68,7 +75,6 @@ strong{
     height: 355px;
     justify-content: space-between;
     display: flex;
-    border: 1px solid black;
     color: white;
     background-color: midnightblue;
 }
@@ -84,6 +90,7 @@ strong{
     display: block;
     margin: 0;
 }
+
 /*PORTFOLIO*/
 
 .project1{
@@ -92,6 +99,25 @@ strong{
     border-radius: 5px;
     margin-bottom: 10px;
 }
+.project1_title{
+    margin: 10px 0;
+}
+.project1_imageContainer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 18px;
+}
+
+
+.project1_details{
+    padding: 20px;
+    font-size: 18px;
+}
+
+
+
+
 .project2{
     display: flex;
     border: 1px solid black;
@@ -145,6 +171,14 @@ strong{
 
 }
 @media screen and (max-width: 767px){
+    h3{
+        font-size: 20px;
+    }
+    h6{
+        font-size: 12px;
+        margin: 5px 0;
+        padding: 0px;
+    }
     .burguer-button{
         display: block;
     }
@@ -200,8 +234,44 @@ strong{
     .hero_description{
         font-size: 22px;
     }
+    
+    .project1_title{
+        margin: 0;
+    }
+    .project1_date{
+        font-size: 12px;
+    }
+    .project1{
+        height: auto;
+    }
+
+    .project1_details{
+        font-size: 12px;
+    }
+
+    .project1_video{
+        width: auto;
+        height: auto;
+    }
+
+    .project1_imageContainer{
+        margin: 22.8px;
+    }
+
 }
 @media screen and (max-width: 480px){
+    h2{
+        margin: 10px 0;
+        font-size: 20px;
+    }
+    h3{
+        font-size: 12px;
+    }
+    h6{
+        font-size: 8.5px;
+        margin: 5px 0;
+        padding: 0px;
+    }
     .burguer-button{
         left: 10px;
         top: 10px;
@@ -234,8 +304,31 @@ strong{
         width: 260px;
         height: 180px;
     }
+    
+    .project1_video{
+        width: 250px;
+        height: 130px;
+    }
+    .project1_imageContainer{
+        margin: 33px 20px;
+    }
+    .project1_title{
+        font-size: 10px;
+    }
+    .project1_course{
+        font-size: 8px;
+    }
+    .project1_date{
+        font-size: 8px;
+    }
+    .project1_details{
+        font-size: 10px;
+    }
 }
 @media screen and (max-width: 320px){
+    h2{
+        font-size: 15px;
+    }
     .hero{
         height: 120px;
     }
@@ -245,5 +338,19 @@ strong{
     }
     .hero_description{
         font-size: 10px
+    }
+    
+    .project1_imageContainer{
+        margin: 0 5px;
+        display: flex;
+        align-items: center;
+    }
+    .project1_video {
+        width: 150px;
+        height: 90px;
+    }
+    .project1_details {
+        padding: 5px 5px;
+        font-size: 8px;
     }
 }

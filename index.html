@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="index.css">
 </head>
 <body>
+    <i class="icon-menu burguer-button" id="burguer-menu"></i>
     <header class="header">
         <div class="container_header">
             <figure class="logo">
@@ -112,5 +113,34 @@
             </article>
         </div>
     </section> -->
+    <script>
+        const menu = document.querySelector(".menu");
+        const ipad =  window.matchMedia("screen and (max-width: 767px)"); 
+        const burguerButton = document.querySelector("#burguer-menu");
+        burguerButton.addEventListener("click", hideShow);
+      
+        function hideShow(){
+            if(menu.classList.contains("is-active")){
+                menu.classList.remove("is-active");
+            }    
+            else{
+                menu.classList.add("is-active");
+            }
+        }
+      
+        ipad.addListener(validation);
+      
+        function validation(event){
+            if(event.matches){
+                burguerButton.addEventListener("click", hideShow);
+            }
+            else{
+                burguerButton.removeEventListener("click", hideShow);
+            }
+        }
+            
+        validation(ipad);
+      
+        </script>
 </body>
 </html>

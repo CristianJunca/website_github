@@ -27,13 +27,18 @@
   .icon-menu:before {
     content: "\e900";
   }
-
+h2{
+    text-transform: uppercase;
+}
 h3{
     font-size: 30px;
 }
 h6{
     font-size: 19px;
     margin: 10px 0;
+}
+body{
+    font-family: 'Ubuntu', sans-serif;
 }
 /*HEADER*/
 .header{
@@ -123,6 +128,14 @@ strong{
     border: 1px solid black;
     border-radius: 5px;
     margin-bottom: 10px;
+}
+.project2_details{
+    padding: 20px;
+}
+.project2_imageContainer{
+    display: flex;
+    align-items: center;
+    margin: 16px 18px;
 }
 /*CAPACITATION*/
 .PLC_title{
@@ -246,7 +259,8 @@ strong{
     }
 
     .project1_details{
-        font-size: 12px;
+        font-size: 15px;
+        padding: 10px;
     }
 
     .project1_video{
@@ -254,15 +268,30 @@ strong{
         height: auto;
     }
 
-    .project1_imageContainer{
-        margin: 22.8px;
+    .project2_image{
+        width: 250px;
+        height: 200px;
+    }
+    .project2_title{
+        margin: 5px 0;
+    }
+    .project2_details{
+        padding: 10px;
+        font-size: 15px;
+    }
+    .project2_imageContainer{
+        margin: 16px 18px;
+    }
+    .project2_video{
+        width: auto;
+        height: auto;
     }
 
 }
 @media screen and (max-width: 480px){
     h2{
         margin: 10px 0;
-        font-size: 20px;
+        font-size: 15px;
     }
     h3{
         font-size: 12px;
@@ -312,9 +341,6 @@ strong{
     .project1_imageContainer{
         margin: 33px 20px;
     }
-    .project1_title{
-        font-size: 10px;
-    }
     .project1_course{
         font-size: 8px;
     }
@@ -324,10 +350,39 @@ strong{
     .project1_details{
         font-size: 10px;
     }
+
+    .project2{
+        display: block;
+    }
+    .project2_details{
+        font-size: 10px;
+        margin: 0px;
+    }
+    .project2_title{
+        margin: 0;
+    }
+    .project2_date{
+        margin: 5px 0;
+    }
+    .project2_description{
+        margin-bottom: 0px;
+    }
+    .project2_imageContainer{
+        display: flex;
+        justify-content: center;
+        margin: 5px;
+    }
+    .project2_video {
+        width: 250px;
+        height: 130px;
+    }
 }
 @media screen and (max-width: 320px){
     h2{
         font-size: 15px;
+    }
+    h3{
+        font-size: 10px;
     }
     .hero{
         height: 120px;
@@ -352,5 +407,20 @@ strong{
     .project1_details {
         padding: 5px 5px;
         font-size: 8px;
+    }
+
+    .project2_image{
+        width: 150px;
+        height: 100px;
+    }
+    .project2_details{
+        font-size: 7px;
+        padding: 5px;
+    }
+    .project2_title {
+        margin: 0 0 5px 0;
+    }
+    .project2_date{
+        margin: 0px 0px;
     }
 }

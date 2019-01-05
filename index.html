@@ -6,12 +6,13 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Cristian Junca - Página Web</title>
     <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="grid.css">
     <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
 </head>
 <body>
     <i class="icon-menu burguer-button" id="burguer-menu"></i>
     <header class="header">
-        <div class="container_header">
+        <div class="container">
             <figure class="logo">
                 <img class="logo_image" src="logo.png" width="155" height="53">
             </figure>
@@ -38,16 +39,14 @@
     </header>
 <!--HERO-->
     <section class="hero">
-        <div class="container_hero">
+        <div class="container">
             <h1 class="hero_description">
-                Hola! Soy <strong>Cristian Junca. </strong> <br /> 
+                Hola! Soy <strong>Cristian Junca, </strong> <br /> 
                 Estudiante de <strong>Ingeniería Mecatrónica.</strong> <br> 
-                Apasionado por la <strong>tecnología</strong>
+                Un apasionado por la <strong>tecnología.</strong>
             </h1>
-        </div>
-        <figure class="hero_imageContainer">
             <img class="hero_image" src="cris.png" width="490" height="355">
-        </figure>
+        </div>
     </section>
 <!-- PORTFOLIO -->
     <section class="portfolio" id="portafolio">
@@ -98,40 +97,52 @@
         </div>
     </section>
 <!-- CAPACITATION -->
-    <!-- <section class="capacitation" id="capacitacion">
+    <section class="capacitation" id="capacitacion">
         <div class="container">
             <h2>Capacitación (títulos)</h2>
-            <article class="PLC_title">
-                <div class="PLC_title_details">
-                    <h3 class="PLC_title_course">CURSO ESPECIAL EN PUESTA A PUNTO DE PROCESOS BASICOS DE AUTOMATIZACION INDUSTRIAL EN PROCESOS MODULARES DE PRODUCCION ASISTIDAS POR PLC</h3>
-                    <figure class="PLC_image_container">
-                        <img class="PLC_image_SENA" src="diploma SENA.png">
-                        <img class="PLC_image_SMC" src="diploma SMC.png">
-                    </figure>
-                    <p></p>
+            <div class="container_items">
+            <div class="item plc">
+                <h5> <center>Puesta a punto de procesos bàsicos de automatizaciòn industrial en procesos
+                        modulares de producciòn asistidas por PLC </center> 
+                </h5>
+                <figure class="plc_imageContainer">
+                    <img class="plc_title1" src="diploma SMC.png" height="400px">
+                    <img class="plc_title2" src="diploma SENA.png " width="564.1px" height="430px">
+                </figure>
+            </div>
+            <div class="item basic_prog">
+                <center><h5>Curso de Programaciòn Bàsica</h5></center>
+                <figue class="basic_prog_imageContainer">
+                    <img class="basic_prog_image" src="ProgBasica.png" width="400px" height="308.96px">
+                </figue>
+            </div>
+            <div class="item web_development">
+                <center><h5>Curso de Desarrollo Web Online</h5></center>
+                <figue class="web_development_imageContainer">
+                    <img class="web_development_image" src="desarrollo web.png" width="400px" height="308.96px">
+                </figue>
+            </div>
+            <div class="item githutb">
+                <center><h5>Curso Profesional de Git y Git Hub</h5></center>
+                <figue class="github_imageContainer">
+                    <img class="github_image" src="git.png" width="400px" height="308.96px">
+                </figue>
+            </div>
+            <div class="item responsive">
+                    <center><h5>Curso de Responsive Design</h5></center>
+                    <figue class="responsive_imageContainer">
+                        <img class="responsive_image" src="Responsive.png" width="400px" height="308.96px">
+                    </figue>
                 </div>
-            </article>
-
-            <article class="DW_title">
-                <div class="DW_details">
-                    <h3 class="DW_title_course">Curso de Desarrollo Web Online</h3>
-                    <figure class="DW_image_container">
-                        <img class="DW_image" src="desarrollo web.png">
-                    </figure>
-                </div>
-            </article>
-
-            <article class="Git_title">
-                <div class="Git_details">
-                    <h3 class="Git_title_course">Curso Profesional de Git y GitHub</h3>
-                    <figure class="Git_image_container">
-                        <img class="Git_image" src="git.png">
-                    </figure>
-                </div>
-            </article>
+            <div class="item grid">
+                <center><h5>Curso de CSS Grid Layout</h5></center>
+                <figue class="cssgrid_imageContainer">
+                    <img class="cssgrid_image" src="CSSGrid.png" width="400px" height="308.96px">
+                </figue>
+            </div>
+            </div>
         </div>
-    </section>  -->
-
+    </section> 
     <script>
         const menu = document.querySelector(".menu");
         const ipad =  window.matchMedia("screen and (max-width: 767px)"); 
@@ -160,6 +171,6 @@
             
         validation(ipad);
       
-        </script>
+    </script>
 </body>
 </html>

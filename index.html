@@ -11,6 +11,7 @@
 </head>
 <body>
     <i class="icon-menu burguer-button" id="burguer-menu"></i>
+<!-- HEADER -->
     <header class="header">
         <div class="container">
             <figure class="logo">
@@ -25,10 +26,10 @@
                         <a class="link" href="#capacitacion">Capacitación</a>
                     </li>
                     <li>
-                        <a class="link" href="#experiencia">Experiencia</a>
+                        <a class="link" href="#servicios">Servicios</a>
                     </li>
                     <li>
-                        <a class="link" href="#servicios">Servicios</a>
+                        <a class="link" href="#experiencia">Experiencia</a>
                     </li>
                     <li>
                         <a class="link" href="#contacto">Contacto</a>
@@ -143,6 +144,40 @@
             </div>
         </div>
     </section> 
+<!-- SERVICES -->
+    <h2 class="title_services">Servicios prestados</h2>
+    <section class="services" id="servicio">
+        <div class="container">
+            <article class="service_electricalMachines">
+                <figure class="electricalMachines_imageContainer">
+                    <img src="taladro.jpeg" alt="" class="electricalMachines_image">
+                </figure>
+                <div class="electricalMachines_details">
+                    <h5><center>Máquinas eléctricas</center></h5>
+                    <p><center>Reparación y manutención de taladros y pulidoras de cualquier clase.</center></p>
+                </div>
+            </article>
+            <article class="service_mathPhysics">
+                <figue class="mathPhysics_imageContainer">
+                    <img src="pi.jpg" alt="" class="mathPhysics_image">
+                </figue>
+                <div class="mathPhysics_details">
+                    <h5><center>Tutorias</center></h5>
+                    <p><center>Explicaciones de matemática, cálculo elemental y física mecánica y electromagnética </center></p>
+                </div>
+            </article>
+            <article class="service_webDevelopment">
+                <figure class="webDevelopment_imageContainer">
+                    <img src="code.png"" class="webDevelopment_imageContainer">
+                </figure>
+                <div class="webDevelopment_details">
+                    <h5><center>Desarrollo de software</center></h5>
+                    <p><center>Desarrollo, mantenimiento y arreglo de páginas web y bases de datos</center></p>
+                </div>
+            </article>
+        </div>
+    </section>
+<!-- JavaScript -->
     <script class="interaction">
         const menu = document.querySelector(".menu");
         const ipad =  window.matchMedia("screen and (max-width: 767px)"); 

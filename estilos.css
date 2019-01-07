@@ -88,17 +88,15 @@ strong{
     color: orangered;
 }
 
-.hero{
-    display: flex;
-    align-items: center;
+.hero {
+    display: flex !important  ;
+    align-items: center !important ;
+    justify-content: space-between !important ;
     color: white;
     background-color: midnightblue;
 }
 
-/* .container_hero{
-    display: flex;
-    align-items: center;
-} */
+
 .hero_imageContainer{
     display: flex;
     display: flex;
@@ -519,7 +517,7 @@ strong{
         margin: 0px;
     }
     .project2_title{
-        margin: 0;
+        margin: 10px 0;
     }
     .project2_date{
         margin: 5px 0;

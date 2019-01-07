@@ -16,7 +16,8 @@
 .responsive_imageContainer,
 .basic_prog_imageContainer,
 .github_imageContainer,
-.web_development_imageContainer{
+.web_development_imageContainer,
+.JS_imageContainer{
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -57,7 +58,8 @@
     .web_development_image,
     .github_image,
     .responsive_image,
-    .cssgrid_image{
+    .cssgrid_image,
+    .JS_image{
         width: 280px;
         height: 216px;
         margin: 10px;
@@ -84,7 +86,8 @@
     .web_development_image, 
     .github_image, 
     .responsive_image, 
-    .cssgrid_image {
+    .cssgrid_image,
+    .JS_image{
         width: 194.1px;
         height: 150px;
     }
@@ -109,7 +112,8 @@
     .web_development_image, 
     .github_image, 
     .responsive_image, 
-    .cssgrid_image {
+    .cssgrid_image,
+    .JS_image {
         width: 97px;
         height: 75px;
     }

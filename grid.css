@@ -72,15 +72,15 @@
     }
     .container_items {
         display: grid;
-        grid-template: 290px repeat(3, auto) / repeat(2, auto);
+        grid-template: 200px repeat(3, auto) / repeat(2, 190px);
         grid-gap: 10px;
     }
     .plc_title1{
-        height: 200px;
+        height: 153px;
     }
     .plc_title2{
-        height: 200px;
-        width: 262px;
+        height: 153px;
+        width: 200px;
     }
     .basic_prog_image, 
     .web_development_image, 

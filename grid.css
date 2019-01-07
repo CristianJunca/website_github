@@ -98,7 +98,7 @@
     }
     .container_items {
         display: grid;
-        grid-template: 150px repeat(3, auto) / repeat(2, auto);
+        grid-template: 140px repeat(3, auto) / repeat(2, auto);
         grid-gap: 10px;
     }
     .plc_title1 {

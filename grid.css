@@ -33,7 +33,7 @@
 @media screen and (max-width: 1024px){
     .container_items {
         display: grid;
-        grid-template: 350px repeat(2, auto) / repeat(2, auto);
+        grid-template: 480px repeat(2, auto) / repeat(2, auto);
         grid-gap: 10px;
     }
 }
@@ -72,15 +72,15 @@
     }
     .container_items {
         display: grid;
-        grid-template: 200px repeat(3, auto) / repeat(2, 190px);
+        grid-template: 290px repeat(3, auto) / repeat(2, auto);
         grid-gap: 10px;
     }
     .plc_title1{
-        height: 153px;
+        height: 200px;
     }
     .plc_title2{
-        height: 153px;
-        width: 200px;
+        height: 200px;
+        width: 262px;
     }
     .basic_prog_image, 
     .web_development_image, 

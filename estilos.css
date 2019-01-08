@@ -245,13 +245,11 @@ strong{
     background: white;
     position: relative;
     z-index: 1;
-    height: 80px;
     width: 400px;
     margin: 0px 0px 10px 35px;
     border: 1px solid #FFF;
     border-radius: 10px;
 }
-/*EXPERIENCE*/
 
 /*CONTACT*/
 .contact{
@@ -372,7 +370,7 @@ strong{
 
     .webDevelopment_details {
         width: 310px;
-        margin: 0px 18px 10px;
+        margin: 0px 45px 10px;
     }
 }
 @media screen and (max-width: 767px){
@@ -476,7 +474,7 @@ strong{
     .service_electricalMachines,
     .service_mathPhysics,
     .service_webDevelopment{
-    width: 350px;
+        width: 350px;
     }
     .electricalMachines_image{
         width: 330px;
@@ -495,7 +493,11 @@ strong{
 
     .webDevelopment_image{
         width: 200px;
-    height: 200px;
+        height: 200px;
+    }
+    .webDevelopment_details {
+        width: 310px;
+        margin: 0px 20px 10px;
     }
 
     .mathPhysics_details {

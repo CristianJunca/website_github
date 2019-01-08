@@ -46,8 +46,11 @@ h2{
 h3{
     font-size: 30px;
 }
+h4{
+    font-size: 16px;
+}
 h6{
-    font-size: 19px;
+    font-size: 15px;
     margin: 10px 0;
 }
 body{
@@ -254,13 +257,23 @@ strong{
 .contact{
     background: midnightblue;
     color: white;
-    height: 100px;
+    height: 130px;
     font-size: 18px;
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
-
+.contact_details{
+    padding-left: 20px;
+}
+.social{
+    padding-right: 20px;
+    display: block;
+}
+.social_details{
+    font-size: 16px;
+    color: white !important;
+}
 .social_link {
     display: inline-block;
     width: 50px;
@@ -268,8 +281,9 @@ strong{
     margin: 0 10px;
     background-size: 50px 50px;
 }
-.contact_details{
-    padding-left: 10px;
+.social_imageContainer{
+    display: flex;
+    justify-content: space-evenly; 
 }
 .social_link.facebook {
     background-image: url('facebook.svg');
@@ -279,6 +293,17 @@ strong{
 }
 .social_link.instagram {
     background-image: url('instagram.svg');
+}
+/* FOOTER */
+.footer{
+    height: 50px;
+    background: darkslateblue;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+.footer_details{
+    padding-right: 20px; 
 }
 /* MEDIA QUERIES */
 
@@ -356,6 +381,9 @@ strong{
     }
     h3{
         font-size: 20px;
+    }
+    h4 {
+        font-size: 14px;
     }
     h6{
         font-size: 12px;
@@ -477,7 +505,17 @@ strong{
 
     }
     .social{
-        display: flex;
+        display: block;
+    }
+    .social_link {
+        display: inline-block;
+        width: 40px;
+        height: 40px;
+        margin: 0 10px;
+        background-size: 40px 40px;
+    }
+    .social_details{
+        font-size: 14px;
     }
 }
 @media screen and (max-width: 480px){
@@ -490,6 +528,9 @@ strong{
     }
     h3{
         font-size: 12px;
+    }
+    h4{
+        font-size: 11px;
     }
     h6{
         font-size: 8.5px;
@@ -602,14 +643,19 @@ strong{
         font-size: 13px;
         margin: 0px 18px 10px;
     }
-    
+    .contact{
+        height: 100px;
+    }
     .social_link {
         width: 30px;
         height: 30px;
         background-size: 30px 30px;
     }
-    .contact_details{
-        font-size: 15px;
+    .social_details{
+        font-size: 11px;
+    }
+    .footer{
+        height: 40px;
     }
 }
 @media screen and (max-width: 320px){
@@ -621,6 +667,9 @@ strong{
     }
     h3{
         font-size: 10px;
+    }
+    h4{
+        font-size: 7px;
     }
     .hero{
         height: 120px;
@@ -707,7 +756,10 @@ strong{
         height: 20px;
         background-size: 20px 20px;
     }
-    .contact_details{
-        font-size: 11px;
+    .social_details{
+        font-size: 7px;
+    }
+    .footer{
+        height: 30px;
     }
 }

@@ -67,10 +67,7 @@ body{
     text-decoration: none;
     font-size: 18px;
 }
-/* .container_header{
-    display: contents;
-    height: inherit;
-} */
+
 
 .header li{
     margin: 10px;
@@ -254,12 +251,40 @@ strong{
 /*EXPERIENCE*/
 
 /*CONTACT*/
+.contact{
+    background: midnightblue;
+    color: white;
+    height: 100px;
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
 
+.social_link {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    margin: 0 10px;
+    background-size: 50px 50px;
+}
+.contact_details{
+    padding-left: 10px;
+}
+.social_link.facebook {
+    background-image: url('facebook.svg');
+}
+.social_link.github {
+    background-image: url('github.svg');
+}
+.social_link.instagram {
+    background-image: url('instagram.svg');
+}
 /* MEDIA QUERIES */
 
 @media screen and (max-width: 1024px){
     .container{
-        width: auto;
+        width: 100%;
     }  
     .project2_video{
         width: auto;
@@ -451,6 +476,9 @@ strong{
         margin: -80px 0px 20px 18px;
 
     }
+    .social{
+        display: flex;
+    }
 }
 @media screen and (max-width: 480px){
     h1{
@@ -574,6 +602,15 @@ strong{
         font-size: 13px;
         margin: 0px 18px 10px;
     }
+    
+    .social_link {
+        width: 30px;
+        height: 30px;
+        background-size: 30px 30px;
+    }
+    .contact_details{
+        font-size: 15px;
+    }
 }
 @media screen and (max-width: 320px){
     h1{
@@ -661,5 +698,16 @@ strong{
     }
     .service_webDevelopment {
         height: 220px;
+    }
+    .contact{
+        height: 70px;
+    }
+    .social_link {
+        width: 20px;
+        height: 20px;
+        background-size: 20px 20px;
+    }
+    .contact_details{
+        font-size: 11px;
     }
 }

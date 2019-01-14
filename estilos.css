@@ -82,7 +82,10 @@ body{
     display: flex;
     padding-inline-start: 0px;
 }
-
+.logo_image{
+    border: 1px solid transparent;
+    border-radius: 10px;
+}
 /*HERO*/
 strong{
     color: orangered;

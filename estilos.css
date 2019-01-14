@@ -662,7 +662,7 @@ strong{
 }
 @media screen and (max-width: 320px){
     h1{
-        font-size: 12px;
+        font-size: 8px;
     }
     h2{
         font-size: 15px;
@@ -671,10 +671,13 @@ strong{
         font-size: 10px;
     }
     h4{
-        font-size: 7px;
+        font-size: 5px;
     }
     .hero{
         height: 120px;
+    }
+    .hero_description {
+        padding: 0 5px;
     }
     .hero_image{
         height: 120px;
@@ -752,6 +755,9 @@ strong{
     }
     .contact{
         height: 70px;
+    }
+    .social {
+        padding-right: 10px;
     }
     .social_link {
         width: 20px;

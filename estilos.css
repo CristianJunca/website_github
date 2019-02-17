@@ -36,6 +36,7 @@
     height: inherit;
     flex-wrap: inherit;
   }
+
 h5{
     font-size: 19px;
     margin: 10px;
@@ -70,13 +71,20 @@ body{
     text-decoration: none;
     font-size: 18px;
 }
-
+.link{
+    font-size: 18px;
+    transition: 0.5s ease;
+}
+.link:hover{
+    font-size: 150%;
+}
 
 .header li{
     margin: 10px;
     list-style: none;
     padding: 10px;
 }
+
 
 .header ol{
     display: flex;
@@ -106,6 +114,13 @@ strong{
     align-items: center;
     justify-content: space-between;
     flex-wrap: wrap;
+}
+
+.container:hover .hero_description{
+    transform: scale(1.05);
+}
+.hero_description{
+    transition: .5s;
 }
 
 /*PORTFOLIO*/
@@ -294,6 +309,16 @@ strong{
 }
 .social_link.instagram {
     background-image: url('instagram.svg');
+}
+.social_link.linkedin {
+    background-image: url('linkedin.svg');
+}
+
+.social_imageContainer:hover .social_link{
+    transform: scale(1.15);
+}
+.social_link{
+    transition: .5s;
 }
 /* FOOTER */
 .footer{
